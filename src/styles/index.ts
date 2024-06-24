@@ -8,12 +8,12 @@ const Styleglobal = createGlobalStyle`
   font-family: Roboto, sans-serif;
 }
 body {
-    background-color: #0012;
+    background-color: #f7f7f7;
 }
 `
 export const Container = styled.div`
-  max-width: 90%;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 224px auto;
 `
 
 export default Styleglobal
