@@ -1,6 +1,17 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
 const Styleglobal = createGlobalStyle`
+:root {
+  --border: #a1a1a1;
+  --card-color: #fcfcfc; 
+  --card-label: #5e5e5e;
+  --sidebar-color: #eee;
+  --bg-color: #fff;
+  --input-color: #666666;
+  --focus-input: #E6F6FD;
+  } 
+
+
 * {
   margin: 0;
   padding: 0;
