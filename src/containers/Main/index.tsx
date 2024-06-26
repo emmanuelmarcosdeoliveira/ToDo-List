@@ -1,8 +1,28 @@
+import Task from '../../components/Task'
+import { Container } from './styles'
+
 const Main = () => {
   return (
-    <main>
+    <Container>
       <p>Duas Tarefas marcadas como: "categoria" e "Termo" </p>
-    </main>
+      <ul>
+        <li>
+          <Task />
+        </li>
+        <li>
+          <Task />
+        </li>
+        <li>
+          <Task />
+        </li>
+        <li>
+          <Task />
+        </li>
+        <li>
+          <Task />
+        </li>
+      </ul>
+    </Container>
   )
 }
 
