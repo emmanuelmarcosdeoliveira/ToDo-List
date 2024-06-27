@@ -1,18 +1,20 @@
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
+import * as enums from '../../utils/enums/tasks'
 
 type TagProps = {
-  priority?: 'string'
-  status?: 'string'
+  priority?: enums.Priority
+  status?: enums.Status
+  parameter: 'Status' | 'Priority'
 }
 
 function Cor(props: TagProps): string {
-  if ('status' in props) {
-    if (props.status === 'pendente') return variaveis.yeloow
-    if (props.status === 'concluída') return variaveis.green
-  } else if ('priority' in props) {
-    if (props.priority === 'urgente') return variaveis.red
-    if (props.priority === 'importante') return variaveis.marrow
+  if (props.parameter === 'Priority') {
+    if (props.priority === enums.Priority.URGENT) return variaveis.red
+    if (props.priority === enums.Priority.IMPORTANT) return variaveis.marrow
+  } else {
+    if (props.status === enums.Status.PEDDING) return variaveis.yeloow
+    if (props.status === enums.Status.CONCLUDED) return variaveis.green
   }
   return variaveis.default
 }
