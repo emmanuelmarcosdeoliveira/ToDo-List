@@ -12,6 +12,11 @@ const Styleglobal = createGlobalStyle`
   --text-area: #8b8b8b;
   --btn-1: #2f3640;
   --tag-color-1: #e1a32a;
+  --tag1: #c23616;
+  --tag2: #44bd32;
+  --tag3: #F0c11a;
+
+
   --shaddow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   } 
 
