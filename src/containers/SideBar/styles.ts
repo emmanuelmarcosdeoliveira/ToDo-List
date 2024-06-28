@@ -18,6 +18,4 @@ export const Input = styled.input`
   font-weight: 700;
   border-color: var(--input-color);
   min-width: 100%;
-  &:focus-visible {
-  }
 `
