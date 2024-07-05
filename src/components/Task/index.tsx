@@ -1,16 +1,33 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { remove } from '../../store/reducers/task'
 
 import * as S from './styles'
-
+import { remove, toEdit } from '../../store/reducers/task'
 import TasksClass from '../../models/Tasks'
 
 type Props = TasksClass
 
-const Task = ({ description, priority, status, title, id }: Props) => {
+const Task = ({
+  description: originalDescription,
+  priority,
+  status,
+  title,
+  id
+}: Props) => {
   const dispatch = useDispatch()
   const [editing, setEditing] = useState(false)
+  const [description, setDescription] = useState('')
+  useEffect(() => {
+    if (originalDescription.length > 0) {
+      setDescription(originalDescription)
+    }
+  }, [originalDescription])
+
+  function cancelEditting() {
+    setEditing(false)
+    setDescription(originalDescription)
+  }
+
   return (
     <>
       <S.Task>
@@ -22,14 +39,32 @@ const Task = ({ description, priority, status, title, id }: Props) => {
           {' '}
           {status}
         </S.Tag>
-        <S.Description value={description} />
+        <S.Description
+          disabled={!editing}
+          value={description}
+          onChange={(event) => setDescription(event.target.value)}
+        />
         <S.ActionBar>
           {editing ? (
             <>
-              <S.ButtonSalve>Salvar</S.ButtonSalve>
-              <S.ButtonCancel onClick={() => setEditing(false)}>
-                Cancelar
-              </S.ButtonCancel>
+              <S.ButtonSalve
+                onClick={() => {
+                  dispatch(
+                    toEdit({
+                      description,
+                      priority,
+                      status,
+                      title,
+                      id
+                    })
+                  )
+                  setEditing(false)
+                }}
+              >
+                Salvar
+              </S.ButtonSalve>
+
+              <S.ButtonCancel onClick={cancelEditting}>Cancelar</S.ButtonCancel>
             </>
           ) : (
             <>
