@@ -1,16 +1,33 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useDispatch } from 'react-redux'
+
 import * as S from './styles'
-import * as enums from '../../utils/enums/tasks'
+import { remove, toEdit } from '../../store/reducers/task'
+import TasksClass from '../../models/Tasks'
 
-type Props = {
-  title: string
-  priority: enums.Priority
-  status: enums.Status
-  description: string
-}
+type Props = TasksClass
 
-const Task = ({ description, priority, status, title }: Props) => {
+const Task = ({
+  description: originalDescription,
+  priority,
+  status,
+  title,
+  id
+}: Props) => {
+  const dispatch = useDispatch()
   const [editing, setEditing] = useState(false)
+  const [description, setDescription] = useState('')
+  useEffect(() => {
+    if (originalDescription.length > 0) {
+      setDescription(originalDescription)
+    }
+  }, [originalDescription])
+
+  function cancelEditting() {
+    setEditing(false)
+    setDescription(originalDescription)
+  }
+
   return (
     <>
       <S.Task>
@@ -22,19 +39,39 @@ const Task = ({ description, priority, status, title }: Props) => {
           {' '}
           {status}
         </S.Tag>
-        <S.Description value={description} />
+        <S.Description
+          disabled={!editing}
+          value={description}
+          onChange={(event) => setDescription(event.target.value)}
+        />
         <S.ActionBar>
           {editing ? (
             <>
-              <S.ButtonSalve>Salvar</S.ButtonSalve>
-              <S.ButtonCancel onClick={() => setEditing(false)}>
-                Cancelar
-              </S.ButtonCancel>
+              <S.ButtonSalve
+                onClick={() => {
+                  dispatch(
+                    toEdit({
+                      description,
+                      priority,
+                      status,
+                      title,
+                      id
+                    })
+                  )
+                  setEditing(false)
+                }}
+              >
+                Salvar
+              </S.ButtonSalve>
+
+              <S.ButtonCancel onClick={cancelEditting}>Cancelar</S.ButtonCancel>
             </>
           ) : (
             <>
               <S.Button onClick={() => setEditing(true)}>Editar</S.Button>
-              <S.ButtonCancel>Remover</S.ButtonCancel>
+              <S.ButtonCancel onClick={() => dispatch(remove(id))}>
+                Remover
+              </S.ButtonCancel>
             </>
           )}
         </S.ActionBar>
