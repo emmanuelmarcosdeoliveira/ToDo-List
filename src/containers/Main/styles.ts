@@ -5,3 +5,10 @@ export const Container = styled.main`
   height: 100dvh;
   overflow-y: auto;
 `
+
+export const Resultado = styled.p`
+  display: block;
+  margin-block: 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+`
