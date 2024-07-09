@@ -3,15 +3,16 @@ import StyleGlobal, { Container } from './styles'
 import { Provider } from 'react-redux'
 import store from './store'
 import Home from './pages/Home'
+import Register from './pages/Register'
 
-const rotas = createBrowserRouter([
+const routes = createBrowserRouter([
   {
     path: '/',
     element: <Home />
   },
   {
-    path: '/novo',
-    element: <h1>Teste 123</h1>
+    path: '/novatarefa',
+    element: <Register />
   }
 ])
 
@@ -20,7 +21,7 @@ function App() {
     <Provider store={store}>
       <StyleGlobal />
       <Container>
-        <RouterProvider router={rotas} />
+        <RouterProvider router={routes} />
       </Container>
     </Provider>
   )
