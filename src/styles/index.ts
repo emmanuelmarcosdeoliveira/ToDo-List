@@ -1,4 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components'
+import variaveis from './variaveis'
+import { Button } from '../components/Task/styles'
 
 const Styleglobal = createGlobalStyle`
 :root {
@@ -35,6 +37,30 @@ body {
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 224px auto;
+`
+
+export const MainContainer = styled.main`
+  padding: 0 2.5rem;
+  height: 100dvh;
+  overflow-y: auto;
+`
+
+export const Titulo = styled.h2`
+  display: block;
+  margin-block: 2.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+`
+export const Input = styled.input`
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--bg-color);
+  font-weight: 700;
+  border-color: var(--input-color);
+  min-width: 100%;
+`
+export const ButtonSalve = styled(Button)`
+  background-color: ${variaveis.green};
 `
 
 export default Styleglobal

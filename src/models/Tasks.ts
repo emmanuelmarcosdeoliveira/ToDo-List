@@ -1,24 +1,24 @@
 import * as enums from '../utils/enums/tasks'
 
 class Tasks {
-  id: number
   title: string
   priority: enums.Priority
   status: enums.Status
   description: string
+  id: number
 
   constructor(
-    id: number,
     title: string,
     priority: enums.Priority,
     status: enums.Status,
-    description: string
+    description: string,
+    id: number
   ) {
-    this.id = id
     this.title = title
     this.priority = priority
     this.status = status
     this.description = description
+    this.id = id
   }
 }
 

@@ -71,9 +71,7 @@ export const Button = styled.button`
   border-radius: 0.5rem;
   margin-right: 0.5rem;
 `
-export const ButtonSalve = styled(Button)`
-  background-color: ${variaveis.green};
-`
+
 export const ButtonCancel = styled(Button)`
   background-color: ${variaveis.red};
 `

@@ -11,11 +11,3 @@ export const Filters = styled.div`
   gap: 0.5rem;
   margin-block: 1rem;
 `
-export const Input = styled.input`
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  background-color: var(--bg-color);
-  font-weight: 700;
-  border-color: var(--input-color);
-  min-width: 100%;
-`
