@@ -4,6 +4,7 @@ import * as S from './styles'
 import { alterarTermo } from '../../store/reducers/filter'
 import * as enums from '../../utils/enums/tasks'
 import { RootReducer } from '../../store'
+import { Input } from '../../styles'
 
 const SideBar = () => {
   const dispatch = useDispatch()
@@ -12,7 +13,7 @@ const SideBar = () => {
     <aside>
       <S.Aside>
         <div>
-          <S.Input
+          <Input
             type="text"
             placeholder="Buscar"
             value={termo}

@@ -3,7 +3,7 @@ import StyleGlobal, { Container } from './styles'
 import { Provider } from 'react-redux'
 import store from './store'
 import Home from './pages/Home'
-import Register from './pages/Register'
+import Cadastro from './pages/Cadastro'
 
 const routes = createBrowserRouter([
   {
@@ -12,7 +12,7 @@ const routes = createBrowserRouter([
   },
   {
     path: '/novatarefa',
-    element: <Register />
+    element: <Cadastro />
   }
 ])
 
