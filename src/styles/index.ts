@@ -1,6 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
 import variaveis from './variaveis'
-import { Button } from '../components/Task/styles'
 
 const Styleglobal = createGlobalStyle`
 :root {
@@ -58,6 +57,17 @@ export const Input = styled.input`
   font-weight: 700;
   border-color: var(--input-color);
   min-width: 100%;
+`
+export const Button = styled.button`
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--bg-color);
+  padding: 0.5rem 0.75rem;
+  border: none;
+  cursor: pointer;
+  background-color: ${variaveis.azulescuro};
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
 `
 export const ButtonSalve = styled(Button)`
   background-color: ${variaveis.green};

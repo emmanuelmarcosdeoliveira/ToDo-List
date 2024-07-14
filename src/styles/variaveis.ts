@@ -3,5 +3,6 @@ export default {
   green: '#44bd32',
   yeloow: '#F0c11a',
   marrow: '#e1a32a',
-  default: '#ccc'
+  default: '#ccc',
+  azulescuro: '#2f3640'
 }
