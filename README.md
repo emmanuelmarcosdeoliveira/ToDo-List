@@ -21,6 +21,7 @@
 - [Usage](#usage)
 - [References](#references)
 - [Contributors or owners](#contributors-or-owners)
+  - [Contribute-to-the-projects](#contribute-to-the-projects)
 - [Contact](#contact)
 - [License](#license)
 
@@ -34,8 +35,8 @@ Esse Projeto é uma Lista de tarefas minimalista, onde podemos incluir nossas ta
 
 `Charlenge`
 
-- Criar funcionalides com o **redux@toolit** como: filtrar a lista de tarefas pelo seu título, e também por categorias,
-- Criar as funcionalidades de:
+- Criar funcionalides com o **redux@toolit** como:
+- Funcionalidades:
   - criar uma nova tarefa.
   - Alteraçào da Tarefa.
   - remoçào de tarefa.
@@ -70,13 +71,13 @@ Requisitos necessários para rodar o projeto:<br>
 
 ## Instalation
 
-Para rodar o projeto em seu computador você tera que fazer o [fork](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) do repositório. Caso você não saiba como fazer, estou deixando um **link** da documentação oficial do gitHub, onde é esclarecido como fazer essse processo.<br> Fazendo esse processo você tera uma copia desse Repositório no seu GitHub.
+Para rodar o projeto em seu computador você tera que fazer o [fork](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) do repositório.Estou deixando um **link** da documentação oficial do gitHub, onde é esclarecido como fazer essse processo.<br> Fazendo esse processo você tera uma copia desse Repositório no seu GitHub.
 <br>
 <img alt="Static Badge" src="https://img.shields.io/badge/-path?style=social&logo=git&label=GitHub%20Docs&color=%23000">
 <a href="https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo"></a>
 
 Depois de ter feito o **fork** vamos fazer o [clone](https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository) desse Repositório atráves do **VSCode**. </br>
-Caso você não saiba como fazer, estou deixando um link para a documentação oficial do gitHub onde é esclarecido como fazer essse processo.
+Estou deixando um link para a documentação oficial do gitHub onde é esclarecido como fazer essse processo.
 <br>
 <sub>Command Line</sub>
 
@@ -109,7 +110,7 @@ npm install
 
 ## Usage
 
-**2. Inicie o processo de desenvolvimento onde o projeto é aberto em um navegador digitando os comandos abaixo no nabegador **<br>
+**2. Inicie o processo de desenvolvimento onde o projeto é aberto em um navegador digitando os comandos abaixo no nabegador**<br>
 <sub>Command Line</sub>
 
 ```npm
@@ -158,6 +159,49 @@ Acesse a versão on-line Projeto clicando no Link Abaixo
 
 Designed by EBAC and developed by [Emmanuel Oliveira](https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit)<br>
 &copy; Todos os Direitos Reservados
+
+### Contribute to the projects
+
+<details>
+<summary>Como fazer uma contribuição ao Projeto ?</summary>
+- Familiarize-se com a documentação do projeto, que geralmente inclui guias de instalação.<br>
+- Explore o código do projeto para entender sua estrutura e funcionamento.<br>
+
+**Faça um Fork**
+
+- Crie uma cópia (fork) do repositório original em sua conta do GitHub.<br>
+  Isso permitirá que você faça alterações sem afetar o projeto original.<br>
+
+<img alt="Static Badge" src="https://img.shields.io/badge/-path?style=social&logo=git&label=GitHub%20Docs&color=%23000">
+<a href="https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo"></a>
+
+**Clone o Repositório**
+
+Isso criará uma cópia local do projeto, onde você poderá fazer suas modificações.
+
+<img alt="Static Badge" src="https://img.shields.io/badge/-path?style=social&logo=git&label=GitHub%20Docs&color=%23000">
+<a href="https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository"></a>
+
+**Crie uma Nova Branch:**
+
+- Crie uma nova branch para isolar suas alterações.<br>
+- Isso facilita a organização do seu trabalho e a criação de pull requests.<br>
+
+**Faça as Alterações:**
+
+- Crie funcionalidades, mude estilos ou resolva `bugs` que iram contribuir para a melhoria do Projeto.<br>
+
+**Crie um Pull Request:**
+
+- Inclua uma descrição clara das suas alterações e explique como elas resolvem o problema ou melhoram o projeto.<br>
+- Solicitação: Envie um pull request para o repositório original, solicitando que suas alterações sejam incorporadas ao projeto.
+  <br>
+
+**Revise e Responda a Feedback:**
+
+- Colabore: Os mantenedores do projeto podem solicitar alterações ou fornecer feedback sobre o seu código.
+
+</details>
 
 ## Contact
 
