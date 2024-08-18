@@ -3,7 +3,6 @@
 ![Banner](https://github.com/emmanuelmarcosdeoliveira/servidor-estatico/blob/main/github/emmanuelOliveira.gif)
 
 <br>
-<br>
 
 <!-- Titulo do Projeto -->
 
@@ -122,7 +121,8 @@ npm run dev
 <br>
 
  <!-- Imagem de Demostração -->
-<h3 align="center"> Imagem de demostração do Projeto
+
+**_Imagem de demostração do Projeto_**
 
 </br>
 </br>
@@ -166,13 +166,14 @@ Designed by EBAC and developed by [Emmanuel Oliveira](https://www.linkedin.com/f
 
 <details>
 <summary>Como fazer uma contribuição ao Projeto ?</summary>
-- Familiarize-se com a documentação do projeto, que geralmente inclui guias de instalação.<br>
-- Explore o código do projeto para entender sua estrutura e funcionamento.<br>
+ 
+ - Familiarize-se com a documentação do projeto, que geralmente inclui guias de instalação.<br>
+- Explore o código do projeto para entender sua estrutura e funcionamento.
+<br>
 
 **Faça um Fork**
 
 - Crie uma cópia (fork) do repositório original em sua conta do GitHub.<br>
-  Isso permitirá que você faça alterações sem afetar o projeto original.<br>
 
 <img alt="Static Badge" src="https://img.shields.io/badge/-path?style=social&logo=git&label=GitHub%20Docs&color=%23000">
 <a href="https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo"></a>
